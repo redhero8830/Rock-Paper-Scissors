@@ -3,6 +3,13 @@
   justify-content: center;
 }
 
+.main button {
+  width: 100px;
+  height: 50px;
+  font-size: large;
+  font-weight: bold;
+}
+
 .box {
   height: 600px;
   border: 10px solid black;
