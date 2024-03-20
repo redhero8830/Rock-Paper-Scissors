@@ -1,23 +1,77 @@
-
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: white;
+  border: 5px solid black;
+  margin: 30px;
+  padding: 20px;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .main {
   display: flex;
   justify-content: center;
 }
 
-.main button {
-  width: 100px;
-  height: 50px;
-  font-size: large;
-  font-weight: bold;
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 40px 20px;
+  border-radius: 30%;
+  border: 3px solid;
+  overflow: hidden;
+}
+.buttons button img {
+  height: 100%;
+  width: 100%;
 }
 
 .box {
-  height: 600px;
-  border: 10px solid black;
+  background-color: white;
+  width: 200px;
+  height: 300px;
+  border: 5px solid black;
   padding: 20px;
-  margin: 20px;
+  margin: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .box-img {
-  height: 400px;
+  height: 100px;
+}
+
+.box h1 {
+  color: black;
+}
+
+.Win {
+  border: 5px solid green;
+  color: green;
+}
+.Lose {
+  border: 5px solid red;
+  color: red;
+}
+.Tie {
+  border: 5px solid black;
+  color: black;
 }
