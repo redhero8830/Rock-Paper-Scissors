@@ -5,15 +5,15 @@ import Box from "./components/Box";
 const choice = {
   rock: {
     name: "Rock",
-    img: "https://partyzzang.co.kr/web/product/small/202305/db16fba4ff16fb26ba1de406a27c2d10.jpg",
+    img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpSJwo%2FbtqXJV1lACE%2Fnx5XrxkCLWXh9UsnoS8vbK%2Fimg.png",
   },
   paper: {
     name: "Paper",
-    img: "https://lh3.googleusercontent.com/proxy/YOEzI26N4HZnGXBzMlqYu2Z9S-M5Uyjn0kmGA8pzPpLfdCA0rFrtg4kkR-7CG0wQ2hKN2-VwynspzEok4UKEg8t1uJoM5alzo2Y_QlAsNRh-H38FQlRWKA",
+    img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbmjB2s%2FbtqXHhp6kpG%2FTH14W4U612SxKo9uuR2sB0%2Fimg.png",
   },
-  scissor: {
+  scissors: {
     name: "Scissors",
-    img: "https://thumbnail.10x10.co.kr/webimage/image/basic600/196/B001969629-4.jpg?cmd=thumb&w=400&h=400&fit=true&ws=false",
+    img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHfURw%2FbtqXKvOTNWK%2FgWTwPXEg9QzSV0ilOuwuak%2Fimg.png",
   },
 };
 
@@ -55,20 +55,29 @@ function App() {
 
   return (
     <div className="container">
-    <h1>Rock-Paper-Scissors</h1>
+      <h1>Rock-Paper-Scissors</h1>
       <div className="main">
         <Box title="You" item={userSelect} result={result} />
         <Box title="Computer" item={comSelect} result={result} />
       </div>
       <div className="buttons">
-        <button onClick={() => play("scissor")}>
-          <img src="https://thumbnail.10x10.co.kr/webimage/image/basic600/196/B001969629-4.jpg?cmd=thumb&w=400&h=400&fit=true&ws=false" alt="scissors"/>
-        </button>
         <button onClick={() => play("rock")}>
-        <img src="https://partyzzang.co.kr/web/product/small/202305/db16fba4ff16fb26ba1de406a27c2d10.jpg" alt="paper"/>
+          <img
+            src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpSJwo%2FbtqXJV1lACE%2Fnx5XrxkCLWXh9UsnoS8vbK%2Fimg.png"
+            alt="rock"
+          />
         </button>
         <button onClick={() => play("paper")}>
-        <img src="https://lh3.googleusercontent.com/proxy/YOEzI26N4HZnGXBzMlqYu2Z9S-M5Uyjn0kmGA8pzPpLfdCA0rFrtg4kkR-7CG0wQ2hKN2-VwynspzEok4UKEg8t1uJoM5alzo2Y_QlAsNRh-H38FQlRWKA" alt="rock"/>
+          <img
+            src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbmjB2s%2FbtqXHhp6kpG%2FTH14W4U612SxKo9uuR2sB0%2Fimg.png"
+            alt="paper"
+          />
+        </button>
+        <button onClick={() => play("scissors")}>
+          <img
+            src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHfURw%2FbtqXKvOTNWK%2FgWTwPXEg9QzSV0ilOuwuak%2Fimg.png"
+            alt="scissors"
+          />
         </button>
       </div>
     </div>
